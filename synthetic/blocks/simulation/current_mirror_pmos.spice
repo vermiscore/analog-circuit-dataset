@@ -1,0 +1,6 @@
+** sch_path: /home/user/Desktop/myfolder/project/analog-circuit-dataset/synthetic/blocks/current_mirror_pmos.sch
+**.subckt current_mirror_pmos
+M1 net2 net1 vdd vdd pmos w=5u l=0.18u m=1
+M2 net1 net1 vdd vdd pmos w=5u l=0.18u m=1
+**.ends
+.end
