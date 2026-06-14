@@ -1,0 +1,5 @@
+* Synthetic circuit 0015
+MN1 net2 vdd GND GND nfet W=8.86u L=0.71u
+MN2 net3 GND GND GND nfet W=3.71u L=0.74u
+MP1 net3 net2 net2 vdd pfet W=3.77u L=0.94u
+.end

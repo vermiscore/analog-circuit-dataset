@@ -1,0 +1,8 @@
+* Synthetic circuit 0023
+MN1 net3 net2 net3 GND nfet w=5.54u l=0.22u m=1
+MN2 net2 net1 net3 GND nfet w=0.63u l=0.66u m=1
+MN3 net1 vdd GND GND nfet w=9.82u l=0.55u m=1
+MP1 net1 net3 net5 vdd pfet w=7.47u l=0.42u m=1
+C1 vdd net1 1p
+C2 net3 net2 10p
+.end

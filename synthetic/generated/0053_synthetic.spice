@@ -1,0 +1,13 @@
+* Synthetic circuit 0053
+MN1 net5 net4 net2 GND nmos w=7.42u l=0.87u m=1
+MN2 net1 net3 net2 GND nmos w=7.59u l=0.33u m=1
+MP1 net6 vctrl vdd vdd pmos w=0.95u l=0.31u m=1
+MP2 net2 vctrl net1 vdd pmos w=1.81u l=0.56u m=1
+MP3 net6 net1 net7 vdd pmos w=5.36u l=0.46u m=1
+MP4 net1 vg net3 vdd pmos w=1.96u l=0.81u m=1
+R1 net7 net5 1000
+R2 net6 net2 10000
+R3 net1 vdd 1000
+C1 net6 net2 100p
+C2 net2 net1 1p
+.end
