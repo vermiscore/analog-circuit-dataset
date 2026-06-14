@@ -1,0 +1,61 @@
+** sch_path: /home/user/Desktop/myfolder/project/ai_circuit_checker/sch/vco/gc_tb.sch
+**.subckt gc_tb vrf vlo vlo_bar vif_bar vif vrf_bar
+*.ipin vrf
+*.ipin vlo
+*.ipin vlo_bar
+*.opin vif_bar
+*.opin vif
+*.ipin vrf_bar
+XQ1 net3 vlo net1 GND npn_05p00x05p00 m=1
+XQ2 net4 vlo_bar net1 GND npn_05p00x05p00 m=1
+XQ3 net3 vlo_bar net2 GND npn_05p00x05p00 m=1
+XQ4 net4 vlo net2 GND npn_05p00x05p00 m=1
+XQ5 net1 vrf net5 GND npn_05p00x05p00 m=1
+XQ6 net2 vrf_bar net6 GND npn_05p00x05p00 m=1
+Re1 net5 GND 200 m=1
+Re2 net6 GND 200 m=1
+Rl1 vdd net3 1k m=1
+Rl2 vdd net4 1k m=1
+C1 net3 vif_bar 10u m=1
+C2 net4 vif 10u m=1
+R1 vif_bar GND 10k m=1
+R2 vif GND 10k m=1
+**** begin user architecture code
+
+
+
+
+.include '/home/user/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/volare/gf180mcu/versions/0fe599b2afb6708d281543108caf8310912f54af/gf180mcuD/libs.tech/ngspice/design.ngspice'
+.lib '/home/user/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/volare/gf180mcu/versions/0fe599b2afb6708d281543108caf8310912f54af/gf180mcuD/libs.tech/ngspice/sm141064.ngspice' bjt_typical
+
+.param VCC=3.3
+VDD vdd GND 3.3
+
+
+
+Vrf  vrf     GND sin(1.5 0.05 1k)
+Vrfb vrf_bar GND sin(1.5 -0.05 1k)
+
+
+Vlo  vlo     GND sin(1.5 0.05 5k)
+Vlob vlo_bar GND sin(1.5 -0.05 5k)
+
+.tran 1u 5m
+.save all
+.control
+run
+plot v(vif) v(vif_bar)
+plot v(vif) - v(vif_bar)
+linearize
+fft v(vif) v(vif_bar)
+plot mag(v(vif)) xlimit 0 10k
+
+.endc
+
+
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end
