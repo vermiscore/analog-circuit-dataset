@@ -1,7 +1,0 @@
-* Synthetic circuit 0037
-MN1 net3 net2 GND GND nfet w=6.21u l=0.35u m=1
-MP1 net2 net2 net3 vdd pfet w=4.72u l=0.96u m=1
-R1 vdd GND 1000
-R2 vdd net2 500
-C1 net2 net3 10n
-.end

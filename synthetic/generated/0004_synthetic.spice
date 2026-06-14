@@ -1,9 +1,0 @@
-* Synthetic circuit 0004
-MN1 net4 net6 net1 GND nfet W=1.36u L=0.12u
-MN2 net5 net3 net6 GND nfet W=9.91u L=0.15u
-MP1 net5 net4 net2 vdd pfet W=7.91u L=0.84u
-MP2 net3 net2 vdd vdd pfet W=8.37u L=0.83u
-MP3 net3 net2 net1 vdd pfet W=3.44u L=0.66u
-C1 net4 GND 10n
-C2 net4 net5 1n
-.end

@@ -1,0 +1,7 @@
+** sch_path: /home/user/Desktop/myfolder/project/analog-circuit-dataset/synthetic/generated/0002_generated.sch
+**.subckt 0002_generated
+M1_0002_0 iref_cmn iref_cmn GND GND nmos w=5u l=0.18u m=1
+M2_0002_0 iout_cmn_0002_0 iref_cmn GND GND nmos w=5u l=0.18u m=1
+**.ends
+.GLOBAL GND
+.end

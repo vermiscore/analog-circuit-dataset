@@ -1,6 +1,0 @@
-* Synthetic circuit 0042
-MN1 net1 net1 GND GND nmos w=6.93u l=0.9u m=1
-MP1 net1 in net3 vdd pmos w=0.8u l=0.18u m=1
-R1 GND vdd 5000
-R2 GND net3 200
-.end

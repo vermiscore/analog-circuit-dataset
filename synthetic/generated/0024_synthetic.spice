@@ -1,9 +1,0 @@
-* Synthetic circuit 0024
-MN1 net2 net1 net1 GND nfet w=7.21u l=1.0u m=1
-MN2 net7 net3 GND GND nfet w=4.69u l=0.88u m=1
-MN3 net6 GND GND GND nfet w=5.41u l=0.96u m=1
-MN4 net6 net6 net4 GND nfet w=5.25u l=1.0u m=1
-MP1 net6 net3 net2 vdd pfet w=6.97u l=0.96u m=1
-MP2 net1 net7 net5 vdd pfet w=6.78u l=0.13u m=1
-R1 net2 net4 500
-.end

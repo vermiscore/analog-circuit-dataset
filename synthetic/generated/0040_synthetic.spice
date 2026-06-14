@@ -1,9 +1,0 @@
-* Synthetic circuit 0040
-MN1 net6 net4 net5 GND nmos w=1.72u l=0.41u m=1
-MN2 net6 net1 net3 GND nmos w=5.51u l=0.76u m=1
-MN3 net1 net4 net6 GND nmos w=6.39u l=0.51u m=1
-MN4 net1 net6 net2 GND nmos w=1.58u l=0.97u m=1
-MP1 net2 net2 net5 vdd pmos w=4.37u l=0.14u m=1
-R1 net4 net5 500
-C1 net2 net5 10p
-.end

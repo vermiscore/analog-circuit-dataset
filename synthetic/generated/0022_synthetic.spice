@@ -1,8 +1,0 @@
-* Synthetic circuit 0022
-MN1 net4 GND net5 GND nfet w=1.65u l=0.69u m=1
-MN2 net3 net5 GND GND nfet w=2.7u l=0.96u m=1
-MP1 net3 net3 net1 vdd pfet w=9.35u l=0.72u m=1
-MP2 net4 net4 vdd vdd pfet w=5.98u l=0.12u m=1
-C1 net1 net2 1n
-C2 GND net1 1p
-.end

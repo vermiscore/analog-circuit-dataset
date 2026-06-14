@@ -1,0 +1,13 @@
+** sch_path: /home/user/Desktop/myfolder/project/analog-circuit-dataset/synthetic/generated/0024_generated.sch
+**.subckt 0024_generated
+M7_0024_0 vout_inv_0024_0 vin_inv vdd vdd pmos w=5u l=0.18u m=1
+M8_0024_0 vout_inv_0024_0 vin_inv GND GND nmos w=5u l=0.18u m=1
+M1_0024_1 iout_cmp_0024_1 vout_inv_0024_0 vdd vdd pmos w=5u l=0.18u m=1
+M2_0024_1 vout_inv_0024_0 vout_inv_0024_0 vdd vdd pmos w=5u l=0.18u m=1
+M8_0024_2 iout_cmp_0024_1 iout_cmp_0024_1 GND GND nmos w=5u l=0.18u m=1
+M1_0024_2 iout_cmp_0024_1 iout_cmp_0024_1 iout_cmp_0024_1 iout_cmp_0024_1 nmos w=5u l=0.18u m=1
+M1_0024_3 iout_cmp_0024_3 iout_cmp_0024_1 vdd vdd pmos w=5u l=0.18u m=1
+M2_0024_3 iout_cmp_0024_1 iout_cmp_0024_1 vdd vdd pmos w=5u l=0.18u m=1
+**.ends
+.GLOBAL GND
+.end

@@ -1,0 +1,22 @@
+** sch_path: /home/user/Desktop/myfolder/project/analog-circuit-dataset/synthetic/generated/0012_generated.sch
+**.subckt 0012_generated
+M1 net3 net3 net3 net3 nmos w=5.53u l=0.41u m=1
+M2 net3 net3 net3 net3 nmos w=5.53u l=0.41u m=1
+M3 net3 net3 net3 net3 nmos w=4.13u l=1.0u m=1
+M4 net3 net3 net1 net3 pmos w=5.08u l=0.68u m=1
+M5 net3 net3 net1 net3 pmos w=5.08u l=0.68u m=1
+M6 net1 net3 net1 net3 pmos w=4.87u l=0.88u m=1
+M4 net3 net3 net1 net3 pmos w=5.8u l=0.7u m=1
+M5 net3 net3 net1 net3 pmos w=5.8u l=0.7u m=1
+M6 net1 net3 net1 net3 pmos w=1.88u l=0.5u m=1
+R1 net3 net3 100 m=1
+R2 net3 net3 100 m=1
+MXN1 net3 net3 net3 net3 nmos w=8.08u l=0.18u m=1
+MXN2 net3 net3 net3 net3 nmos w=2.62u l=0.99u m=1
+MXP1 net3 net3 net3 net3 pmos w=9.73u l=0.59u m=1
+RX1 net3 net3 10000 m=1
+RX2 net3 net3 200 m=1
+**.ends
+.GLOBAL GND
+.GLOBAL vdd
+.end

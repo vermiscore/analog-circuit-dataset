@@ -1,8 +1,0 @@
-* Synthetic circuit 0020
-MN1 net5 net1 GND GND nfet w=4.41u l=0.99u m=1
-MN2 net1 net1 net2 GND nfet w=5.01u l=0.62u m=1
-MP1 net4 net2 net1 vdd pfet w=3.51u l=0.92u m=1
-MP2 net3 net4 net3 vdd pfet w=1.38u l=0.57u m=1
-MP3 net4 net5 vdd vdd pfet w=2.46u l=0.32u m=1
-C1 net2 GND 1p
-.end
