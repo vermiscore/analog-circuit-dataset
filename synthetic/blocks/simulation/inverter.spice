@@ -1,0 +1,7 @@
+** sch_path: /home/user/Desktop/myfolder/project/analog-circuit-dataset/synthetic/blocks/inverter.sch
+**.subckt inverter
+M7 vout_inv vin_inv vdd vdd pmos w=5u l=0.18u m=1
+M8 vout_inv vin_inv GND GND nmos w=5u l=0.18u m=1
+**.ends
+.GLOBAL GND
+.end

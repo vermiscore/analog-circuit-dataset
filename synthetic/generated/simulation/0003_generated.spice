@@ -6,6 +6,10 @@ M3_0003_0 net1 vbn_dpn GND GND nmos w=5u l=0.18u m=1
 M4_0003_0 voutp_dpn_0003_0 vinm net2 vdd pmos w=5u l=0.18u m=1
 M5_0003_0 voutm_dpn_0003_0 vinp net2 vdd pmos w=5u l=0.18u m=1
 M6_0003_0 net2 vbp_dpn vdd vdd pmos w=5u l=0.18u m=1
+M1_0003_1 iout_cmp_0003_1 voutm_dpn_0003_0 vdd vdd pmos w=5u l=0.18u m=1
+M2_0003_1 voutm_dpn_0003_0 voutm_dpn_0003_0 vdd vdd pmos w=5u l=0.18u m=1
+M8_0003_2 iout_cmp_0003_1 iout_cmp_0003_1 iout_cmp_0003_1 iout_cmp_0003_1 nmos w=5u l=0.18u m=1
+M1_0003_2 iout_cmp_0003_1 iout_cmp_0003_1 iout_cmp_0003_1 iout_cmp_0003_1 nmos w=5u l=0.18u m=1
 **.ends
 .GLOBAL GND
 .end

@@ -1,0 +1,43 @@
+
+
+>jun 14
+今日やったこと：
+
+1. 回路図認識テスト
+
+    gc_tb（ギルバートセル）、div（カレントミラー変形）、vco回路の3つで画像→SPICE生成を試した
+    結果：カンニングなしでは精度0%、画像を拡大・解析すれば改善できる
+
+2. 判定ツール作成（compare_spice.py）
+
+    SPICE同士を比較するツール
+    素子数・値の比較
+    networkxを使ったグラフ同型判定（接続構造の比較）
+    MOSFET/BJT/R/C/L対応
+
+3. データセット作成（GitHub）
+
+    analog-circuit-datasetリポジトリ作成
+    verified/：手動で作った正解データ（vco/gc_tb/div の3ペア）
+    synthetic/blocks/：基本ブロック8種類作成
+        current_mirror_nmos/pmos
+        diff_pair_nmos/pmos
+        cs_amp_nmos
+        cascode_nmos
+        inverter
+        diode_connected_nmos
+
+4. 自動生成スクリプト（combine_blocks.py）
+
+    ブロックを3〜4個ランダムに組み合わせ
+    接続もランダム
+    SCH+PNG+SPICE自動生成
+    ワイヤーを素子エリアの下を通してオーバーラップ回避
+
+5. 今後の課題
+
+    データを1000ペアまで増やす
+    Colabでfine-tuning（LoRA）
+    Hugging Faceに公開
+
+

@@ -1,0 +1,10 @@
+** sch_path: /home/user/Desktop/myfolder/project/analog-circuit-dataset/synthetic/blocks/diff_pair_pmos.sch
+**.subckt diff_pair_pmos
+M4 vd1_dpp vg1_dpp net1 vdd pmos w=5u l=0.18u m=1
+M5 vd2_dpp vg2_dpp net1 vdd pmos w=5u l=0.18u m=1
+M6 net1 vbp_dpp vdd vdd pmos w=5u l=0.18u m=1
+R1 vd1_dpp GND 1k m=1
+R2 vd2_dpp GND 1k m=1
+**.ends
+.GLOBAL GND
+.end

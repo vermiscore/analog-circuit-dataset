@@ -1,0 +1,10 @@
+
+
+diff_pair_nmos → "NMOS differential pair schematic"
+diff_pair_pmos → "PMOS differential pair schematic"
+cs_amp_nmos → "NMOS common source amplifier schematic"
+cs_amp_pmos → "PMOS common source amplifier schematic"
+inverter → "CMOS inverter schematic"
+cascode_nmos → "NMOS cascode amplifier schematic"
+cascode_pmos → "PMOS cascode amplifier schematic"
+diode_connected_nmos → "diode connected MOSFET schematic"

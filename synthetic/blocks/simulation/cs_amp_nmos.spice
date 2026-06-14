@@ -1,0 +1,7 @@
+** sch_path: /home/user/Desktop/myfolder/project/analog-circuit-dataset/synthetic/blocks/cs_amp_nmos.sch
+**.subckt cs_amp_nmos
+M1 vout_csampn vin_csampn GND net1 nmos w=5u l=0.18u m=1
+R3 vdd vout_csampn 1k m=1
+**.ends
+.GLOBAL GND
+.end

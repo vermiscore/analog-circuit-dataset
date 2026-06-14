@@ -1,0 +1,7 @@
+** sch_path: /home/user/Desktop/myfolder/project/analog-circuit-dataset/synthetic/blocks/diode_connected_nmos.sch
+**.subckt diode_connected_nmos
+M8 vout_diode vout_diode GND GND nmos w=5u l=0.18u m=1
+M1 vin_diode vin_diode vout_diode GND nmos w=5u l=0.18u m=1
+**.ends
+.GLOBAL GND
+.end

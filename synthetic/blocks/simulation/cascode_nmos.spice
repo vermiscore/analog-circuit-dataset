@@ -1,0 +1,8 @@
+** sch_path: /home/user/Desktop/myfolder/project/analog-circuit-dataset/synthetic/blocks/cascode_nmos.sch
+**.subckt cascode_nmos
+M8 net1 vin_cascoden GND GND nmos w=5u l=0.18u m=1
+M1 vout_cascoden vb_cascoden net1 GND nmos w=5u l=0.18u m=1
+R1 vdd vout_cascoden 1k m=1
+**.ends
+.GLOBAL GND
+.end

@@ -1,4 +1,14 @@
 
+>command
+>>
+python combine_blocks.py --count 5 --start 1
+eog ~/Desktop/myfolder/project/analog-circuit-dataset/synthetic/generated/0001_generated.png
+
+>>new
+cd ~/Desktop/myfolder/project/analog-circuit-dataset
+python combine_blocks.py --count 5 --start 100
+
+
 >symbol coordinate
 
 nmos4: d=(20,-30)  g=(-20,0)  s=(20,30)  b=(20,0)
